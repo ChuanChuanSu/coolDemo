@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>transition</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.14.1/lodash.min.js"></script>
+    <script src="../vue.js"></script>
+    <script defer="defer"  src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="transition">
+    <button @click="shuffle">shuffle</button>
+    <transition-group name="list" tag="div" class="list">
+        <span v-for="item in list" :key="item.index" class="list-item">{{item.number}}</span>
+    </transition-group>
+</div>
+</body>
+</html>

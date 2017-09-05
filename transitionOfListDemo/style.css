@@ -1,0 +1,22 @@
+.list{
+    display:flex;
+    flex-flow:row wrap;
+    width:300px;
+    height:300px;
+}
+
+.list-item{
+    display:inline-block;
+    box-sizing:border-box;
+    width:30px;
+    height:30px;
+    border:1px solid #fbe8e7;
+    line-height:30px;
+    text-align: center;
+    font-size: 14px;
+    /*color:#d5ebfa;*/
+}
+
+.list-move{
+    transition:all 1s;
+}
